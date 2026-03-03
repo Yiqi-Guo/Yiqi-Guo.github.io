@@ -1,0 +1,18 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use 'hugo:vars' as hugo;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   themes\anatole\assets\scss\modules\_config.scss 1:1  @use
+ *   themes\anatole\assets\scss\main.scss 2:1             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use 'hugo:vars' as hugo;\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   themes\\anatole\\assets\\scss\\modules\\_config.scss 1:1  @use\a   themes\\anatole\\assets\\scss\\main.scss 2:1             root stylesheet";
+}
